@@ -2,18 +2,15 @@
 //  ContentView.swift
 //  Movies
 //
-//  Created by Justin Bush on 2021-06-26.
+//  Created by Justin Bush on 2021-08-25.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        /*
         Text("Hello, world!")
             .padding()
-        */
-        MovieHome()
     }
 }
 

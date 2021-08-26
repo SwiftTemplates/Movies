@@ -27,6 +27,13 @@ struct Movie: Hashable, Codable, Identifiable {
     Image("\(imageName)-cover")
   }
   
+  var posterURL: String {
+    "\(urlPrefix)/\(imageName).jpg"
+  }
+  var coverURL: String {
+    "\(urlPrefix)/\(imageName)-cover.jpg"
+  }
+  
   var category: Category
   enum Category: String, CaseIterable, Codable {
     case recentlyAdded = "Recently Added"
@@ -35,3 +42,5 @@ struct Movie: Hashable, Codable, Identifiable {
   }
   
 }
+
+let urlPrefix = "https://swift.appstudio.io/app/Movies"
